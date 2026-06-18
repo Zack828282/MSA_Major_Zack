@@ -75,7 +75,7 @@ def main():
                         User_input = int(input(f"\n{random_number_1} + {random_number_2} = "))
                         Sum = random_number_1 + random_number_2
                         if User_input == Sum:
-                            print("\nCorrect!\n")
+                            print("\nCorrect!")
                             Correct_answers += 1
                             Total_answers += 1
                             break
