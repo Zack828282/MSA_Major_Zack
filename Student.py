@@ -1,14 +1,14 @@
 class Student():
     # Define a cunstructor
     # The constructor is a function that is called to create a student
-    def __init__(self, first_name, last_name, major, credit_hours, gpa, ID):
+    def __init__(self, first_name, last_name, major, credit_hours, gpa, id):
         # Define class properties with the parameter values
         self.__first_name = first_name
         self.__last_name = last_name
         self.__major = major
         self.__credit_hours = credit_hours
         self.__gpa = gpa
-        self.__ID= ID
+        self.__ID = id
 
     # Create getter and setter methods for class properties
     def get_first_name(self):
@@ -47,19 +47,19 @@ class Student():
         return new_gpa
     
     def get_ID(self):
-        return self.__ID
+        return self.__id
 
     def get_class_level(self):
 
         class_level = "Placeholder"
 
-        if self.__credit_hours < 31:
+        if int(self.__credit_hours) < 31:
             class_level == "Freshman"
-        elif self.__credit_hours > 30 and self.__credit_hours < 61:
+        elif int(self.__credit_hours) > 30 and int(self.__credit_hours) < 61:
             class_level == "Sophomore"
-        elif self.__credit_hours > 60 and self.__credit_hours < 91:
+        elif int(self.__credit_hours) > 60 and int(self.__credit_hours) < 91:
             class_level == "Junior"
-        elif self.__credit_hours > 90:
+        elif int(self.__credit_hours) > 90:
             class_level == "Senior"
         return class_level
 
@@ -67,9 +67,9 @@ class Student():
         self.__credit_hours += additional_credit_hours
         return
     
+
     # Create a method to print automobile data
     def print_student_data(self):
-        class_level = self.get_class_level
         print(f"{self.__first_name} {self.__last_name}")
-        print(f"Class level: {class_level}, Major: {self.__major}")
+        print(f"Credit hours: {self.__credit_hours}, Major: {self.__major}")
         print(f"GPA: {self.__gpa}, ID: {self.__ID}")
