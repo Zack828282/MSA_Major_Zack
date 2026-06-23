@@ -1,14 +1,14 @@
 class Student():
     # Define a cunstructor
     # The constructor is a function that is called to create a student
-    def __init__(self, first_name, last_name, major, credit_hours, gpa, id):
+    def __init__(self, first_name, last_name, major, credit_hours, gpa, ID):
         # Define class properties with the parameter values
         self.__first_name = first_name
         self.__last_name = last_name
         self.__major = major
         self.__credit_hours = credit_hours
         self.__gpa = gpa
-        self.__ID = id
+        self.__ID = ID
 
     # Create getter and setter methods for class properties
     def get_first_name(self):
@@ -47,7 +47,7 @@ class Student():
         return new_gpa
     
     def get_ID(self):
-        return self.__id
+        return self.__ID
 
     def get_class_level(self):
 

@@ -43,7 +43,7 @@ def main():
         #for Key, Value in [Car_info]:
         #print(f"{Key}: {Value}")
             
-            # I spent a lot of time trying to fix the code above, enough to were I wasn't able to keep up and do wat was done next, so here's a rundown:
+            # I spent a lot of time trying to fix the code above, enough to were I wasn't able to keep up and do what was done next, so here's a rundown:
             # You can have two dictionaries, both stored in a list
             # If you want to print some of both, do a loop in a loop. Ill try to do that below
             # Don't trust this code. I don't know why it's all wrong, but something's off, and I'm not able to spend time fixing it right now.
