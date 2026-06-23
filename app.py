@@ -15,12 +15,10 @@ app.config["DEBUG"] = True
 # Output: a list of student dictionaries that match te search criteria
 """
 def search_dictionary_list(search_key, search_value):
-    User_search_key = "Major"
-
     student_dictionaries = sg.get_student_dictionaries()
     Included_students = []
     for student in [student_dictionaries]:
-        if search_key == User_search_key and search_value == User_search_value:
+        if search_value.lower() == student[search_key]:
             Included_students.append(student)
         else:
             continue
