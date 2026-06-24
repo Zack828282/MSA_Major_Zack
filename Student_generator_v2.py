@@ -1,4 +1,4 @@
-from Student import Student
+from app.Student import Student
 def main(): 
     co_data_num = 0
     student_list: list[Student] = []
